@@ -8,8 +8,7 @@ exports.run = function(nexus, msg, args) {
     if (msg.mentions.users.size < 1) return msg.reply('You must mention someone to kick them.').catch(console.error);
     if (reason.length < 1) return msg.reply('You must supply a reason for the kick.');
     
-    if (!msg.guild.member(user).kickable || !msg.channel.permissionsFor(msg.guild.me).has("KICK_MEMBERS")) return msg.react("❎").then(msg.reply('I cannot kick that member! They either have higher roles than me or i have no permission to do so!'));
-  msg.guild.member(user).kick()
+   
 
   const embed = new Discord.RichEmbed()
     .setColor(0xEFF741)
