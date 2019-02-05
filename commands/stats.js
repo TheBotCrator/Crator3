@@ -12,7 +12,7 @@ exports.run = function(nexus, msg) {
 		},
 		{
 			name: "Creator/Author",
-			value: "Skweezi Leekz#2426"
+			value: "LifeTime Chill"
 		},
 		{
 			name: "Library - Version",
