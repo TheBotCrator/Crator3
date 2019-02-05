@@ -14,12 +14,12 @@ nexus.on("ready", () => {
 ));
 	setInterval(function(){
 		let randomplayings = [
-		"with my dad Skweezi Leekz",
-		"Minecraft",
-		"with my hammer", 
-		"at my sister DynTina's house",
-		"please love me ;-;",
-		"sum por..i mmean security videos.. security videos!"]
+		"With Lanes",
+		"With You",
+		"Not with You", 
+		"Not With Lanes",
+		"I have only one command ;-;",
+		"Only 1"]
 		  nexus.user.setPresence({
     game: {
     name: `${randomplayings[Math.floor(Math.random() * randomplayings.length)]} | nxhelp | ${nexus.guilds.size} Servers and v${package.version}`,
