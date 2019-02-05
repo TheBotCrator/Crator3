@@ -7,7 +7,7 @@ exports.run = function(nexus, msg, args) {
   let modlog = nexus.channels.find('name', 'nexus-log');
     if (msg.mentions.users.size < 1) return msg.reply('You must mention someone to kick them.').catch(console.error);
     if (reason.length < 1) return msg.reply('You must supply a reason for the kick.');
-    if (!modlog) return msg.reply('I cannot find a channel to log! Please make a channel called `nexus-log`');
+    
     if (!msg.guild.member(user).kickable || !msg.channel.permissionsFor(msg.guild.me).has("KICK_MEMBERS")) return msg.react("❎").then(msg.reply('I cannot kick that member! They either have higher roles than me or i have no permission to do so!'));
   msg.guild.member(user).kick()
 
