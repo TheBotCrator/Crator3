@@ -22,7 +22,7 @@ nexus.on("ready", () => {
 		"Only 1"]
 		  nexus.user.setPresence({
     game: {
-    name: `${randomplayings[Math.floor(Math.random() * randomplayings.length)]} | nxhelp | ${nexus.guilds.size} Servers and v${package.version}`,
+    name: `${randomplayings[Math.floor(Math.random() * randomplayings.length)]} | boihelp | ${nexus.guilds.size} Servers and v${package.version}`,
     type: 0
     }
   });
